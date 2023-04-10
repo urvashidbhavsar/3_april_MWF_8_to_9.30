@@ -1,0 +1,29 @@
+html => HyperText Markup Language.
+
+=> to create webpage on the browser.
+=> to create structure on webpage.
+
+http => HyperText Tranfer Protocol
+
+start / developed => 1993
+who's developed => tim berners' lee 
+
+html and html5
+html5 => embed multimedia => audio and video
+graphics tag 
+
+what is tag?
+a word written with angle braket it known as tag. for ex. <html>
+
+tag are two type 
+(1) closing / structure tag => which is started and end 
+    for ex. <html> ... </html>
+(2) non-closing / void tag / non-structure tag 
+ => <img>, <link>, <br>, <meta>, etc..
+
+what is an element?
+a word written between angle braket is known as an element. for ex, in <img> tag img is an element.
+
+what is an attribute?
+it is an additional functionality.
+<body bgcolor = "" background=""> here, bgcolor and background is an attribute.
