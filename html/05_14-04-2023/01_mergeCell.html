@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- to merge a cell used rowspan and colspan -->
+    <!-- both are used in <td> or <th> tag -->
+    <!-- when we use rowspan remove columns from next rows -->
+    <!-- when we use colspan remove columns from that particular row -->
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Flavors</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Milk</td>
+            <td>Chocolate</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+        </tr>
+        <tr>
+            <td>Almond</td>
+        </tr>
+        <tr>
+            <td colspan="2">These are exclusive flavors</td>
+        </tr>
+    </table>
+</body>
+</html>
