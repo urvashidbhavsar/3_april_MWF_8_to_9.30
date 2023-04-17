@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action => file name which you forworded.
+                 if we set # it can not forword another page
+
+        method => 2 type of method
+        get => it display whole information of form display in URL.
+            it has limitation to display characters in URL. max 255
+        post => it can wrap all data / information and send to the next page
+    -->
+    <form action="#" method="post" name="reg_page">
+        <label for="fname">Name</label>
+        <!-- readonly -->
+        <input type="text" id="fname" name="f_name" placeholder="Enter name" required maxlength="10" minlength="3">
+        <br><br>
+
+        <label for="">Password</label>
+        <input type="password" id="" name="" placeholder="Enter Password" maxlength="" size="25px">
+        <br><br>
+
+        <!-- from multiple option select option used radio button -->
+        <!-- in radio button name is complusory and give name are same -->
+        <label for="">Gender</label>
+        <input type="radio" name="gen" id="">
+        <label for="">Male</label>
+        <input type="radio" name="gen" id="">
+        <label for="">Female</label>
+        <input type="radio" name="gen" id="">
+        <label for="">Others</label>
+        <br><br>
+
+        <!-- for multiple option selection -->
+        <label for="">Education</label>
+        <input type="checkbox" name="check1" id="">
+        <label for="">10th</label>
+        <input type="checkbox" name="check2" id="">
+        <label for="">12th</label>
+        <br><br>
+        <!-- for address used textarea -->
+        <label for="add">Address</label>
+        <textarea name="address" id="add" cols="50" rows="3" placeholder="Enter Address" maxlength="100" minlength="20"></textarea>
+        <br><br>
+
+        <!-- city -->
+        <label for="c_name">City</label>
+        <select name="city" id="c_name">
+            <option value="0">---select---</option>
+            <option value="1">Surat</option>
+            <option value="2">Baroda</option>
+        </select>
+        <br><br>
+
+        <!-- date -->
+        <label for="">Date</label>
+        <input type="date" name="" id="">
+        <br><br>
+
+        <!-- date-time local-->
+        <label for="">Datetime Local</label>
+        <input type="datetime-local" name="" id="">
+        <br><br>
+
+        <!-- time -->
+        <label for="">Time</label>
+        <input type="time" name="" id="">
+        <br><br>
+        
+
+        <label for="">Month</label>
+        <input type="month" name="" id="">
+        <br><br>
+        
+        <label for="">Week</label>
+        <input type="week" name="" id="">
+        <br><br>
+
+        <label for="">Color</label>
+        <input type="color" name="" id="">
+        <!-- for move on next page used type submit button -->
+        <input type="submit" name="submit" id="" value="Register">
+        <input type="reset" name="reset" id="" value="Clear">
+        <input type="button" name="" id="" value="Button">
+
+        <!-- <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+        <button type="button">Button</button> -->
+
+    </form>
+</body>
+</html>
