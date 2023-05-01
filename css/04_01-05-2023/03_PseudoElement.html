@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:150px;
+            width: 200px;
+            border: 2px solid black;
+            padding: 20px;  
+        }
+        /* ::before and ::after used to set css on webpage */
+        .head::before{
+            content: "\2668";
+        }
+        .head::after{
+            content: "\2668";
+        }
+        .mydiv::first-letter{
+            font-size: 30px;
+        }
+        .mydiv::first-line{
+            color: red;
+        }
+        .mydiv::selection{
+            background-color: black;
+            color: white;
+        }
+        li::marker{
+            color: blue;
+        }
+        input::placeholder{
+            text-align: center;
+            color: black;
+            font-size: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo elements which is used with all elements, classes and id's -->
+
+    <h1 class="head">Hello world</h1>
+    <div class="mydiv">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, labore architecto amet sed neque non veniam impedit rem ipsum magnam voluptatum adipisci nobis tempore esse ea, possimus doloremque suscipit repellat?
+    </div>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+    </ul>
+    <input type="text" placeholder="Enter Any value">
+</body>
+</html>

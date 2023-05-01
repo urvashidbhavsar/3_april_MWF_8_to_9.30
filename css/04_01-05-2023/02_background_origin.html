@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv{
+            height: 300px;
+            width: 300px;
+            border: 10px dashed black;
+            padding: 20px;
+            background-image: url(image1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            /* used to how image positioning in area */
+            /* set image in border */
+            /* background-origin: border-box; */
+            
+            /* not count padding cover only content area  */
+            /* background-origin: content-box; */
+
+            /* default value */
+            background-origin: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv"></div>
+</body>
+</html>
