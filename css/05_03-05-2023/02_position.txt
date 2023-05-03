@@ -1,0 +1,11 @@
+how to positionate value/element on the webpage
+there is 5 value of position property :
+
+position : static (default)
+position : fixed 
+position : sticky 
+position : relative 
+position : absolute 
+
+=> some property are only work with position.
+(1) top (2) bottom (3) left (4) right (5) z-index

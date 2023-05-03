@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        .main{
+            position: relative;
+        }
+        .img1{
+            position: absolute;
+            top:0;
+            left: 0;
+            /* set priority of element */
+            z-index: 1;
+        }
+        .img2{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 3;
+        }
+        .img3{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img1">
+            <img src="wallpaper.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="wallpaper1.jpg" alt="">
+        </div>
+        <div class="img3">
+            <img src="wallpaper2.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>
