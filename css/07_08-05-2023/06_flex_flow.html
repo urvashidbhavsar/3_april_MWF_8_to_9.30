@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex flow is a shorthand of flex-direction and flex-wrap */
+        .main{
+            border: 1px solid black;
+            width: 50%;
+            display: flex;
+            /* flex-wrap: wrap;
+            flex-direction: row; */
+            flex-flow: row-reverse wrap;
+            justify-content: center;
+        }
+        .div1{
+            background-color: rgb(220, 189, 66);
+            height: 100px;
+            width: 50%;
+        }
+        .div2{
+            background-color: darkseagreen;
+            height: 100px;
+            width: 50%;
+        }
+        .div3{
+            background-color: darkgoldenrod;
+            height: 100px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* .main{
+            background-color: bisque;
+        } */
+        .main .margin-outer{
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        .main .padding-inner{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .main .flex-box{
+            display: flex;
+            align-items: center;
+        }
+        .main .flex-box .left-flex-box{
+            flex: 1;
+        }
+        .main .flex-box .left-flex-box img{
+            height: auto;
+            max-width: 100%;
+        }
+        .main .flex-box .right-flex-box{
+            flex: 1;
+            padding: 50px;
+        }
+        .main .flex-box .right-flex-box .thumbnail{
+            background-color: #3372f2;
+            height: auto;
+            width: fit-content;
+            padding: 7px;
+            border-radius: 10px;
+        }
+        .main .flex-box .right-flex-box h1{
+            font-size: 45px;
+            padding: 20px 0px;
+        }
+        .main .flex-box .right-flex-box p{
+            color: gray;
+            padding-bottom: 20px;
+        }
+        .main .flex-box .right-flex-box button{
+            height: 40px;
+            width: 120px;
+            background-color: #3372f2;
+            color: white;
+            border: 2px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="margin-outer">
+            <div class="padding-inner">
+                <div class="flex-box">
+                    <div class="left-flex-box">
+                        <img src="image1.jpg" alt="">
+                    </div>
+                    <div class="right-flex-box">
+                        <div class="thumbnail">Real History</div>
+                        <h1>Best Interior Designs for your family</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quas tempore libero a rerum! Dolorem recusandae eligendi at omnis, quaerat voluptatum alias sunt eos dolore provident corporis aliquam officiis praesentium.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

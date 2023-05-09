@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 1px solid black;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .div1, .div3, .div5{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .div4, .div2{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+     <!-- display flex and grid always apply in parent class -->
+    <div class="main">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+    </div>
+</body>
+</html>
