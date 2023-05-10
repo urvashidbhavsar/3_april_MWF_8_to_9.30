@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            /* grid-template-rows: ; */
+            /* grid-template-columns: auto auto auto auto auto; */
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            /* grid-template-columns: repeat(6,1fr); */
+            /* grid-template-columns: 2fr 1fr 2fr; */
+            justify-items: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .div1, .div3, .div5, .div7, .div9{
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+        }
+        .div2, .div4, .div6, .div8, .div10{
+            height: 100px;
+            width: 100px;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- display grid show data as tabular wise. -->
+    <div class="main">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
+        <div class="div7">div7</div>
+        <div class="div8">div8</div>
+        <div class="div9">div9</div>
+        <div class="div10">div10</div>
+
+    </div>
+</body>
+</html>

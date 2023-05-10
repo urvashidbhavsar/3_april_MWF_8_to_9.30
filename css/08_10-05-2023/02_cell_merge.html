@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+        .div1, .div3, .div5, .div7, .div9{
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+        }
+        .div2, .div4, .div6, .div8, .div10{
+            height: 100px;
+            width: 100px;
+            background-color: darkgreen;
+        }
+        .div1{
+            width: 100%;
+            grid-column: 1 / span 2;
+            /* grid-column-start: 1; */
+            /* grid-column-end: span 2; */
+        }
+        .div3{
+            width: 100%;
+            grid-column: 4 / span 2;
+        }
+        .div5{
+            height: 100%;
+            grid-row: 2 / span 2;
+            align-self: center;
+            /* grid-row-start: 2;
+            grid-row-end: span 2; */
+        }
+    </style>
+</head>
+<body>
+     <div class="main">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
+        <div class="div7">div7</div>
+        <div class="div8">div8</div>
+        <div class="div9">div9</div>
+        <div class="div10">div10</div>
+    </div>
+</body>
+</html>
