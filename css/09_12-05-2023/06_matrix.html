@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv1{
+            height: 100px;
+            width: 100px;
+            background-color: rebeccapurple;
+            margin: 50px auto;
+            /* scaleY() skewX() skewY() scaleX() translateX() traslateY()*/
+            /* transform: matrix(0.4,1.2,2,-1,104,109); */
+            transform: scaleX(1.1) scaleY(1.5) skewX(20deg) skewY(10deg) translateX(50px) translateY(50px) rotate(90deg);
+        }
+        .mydiv2{
+            height: 100px;
+            width: 100px;
+            background-color: rebeccapurple;
+            margin: 50px auto;
+            transform: translateX(86px) translateY(-4px) rotateX(84deg) rotateY(185deg) rotateZ(359deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv1"></div>
+    <div class="mydiv2"></div>
+
+</body>
+</html>
