@@ -1,0 +1,10 @@
+media query use for make a responsive website.
+
+devices => 
+
+mini screen mobile                 max-width 576px
+large screen mobile                min-width 576px
+tablet device                      min-width 768px
+mini leptop screen                 min-width 992px
+large leptop screen                min-width 1140px = 1200px
+tv screen                          min-width 1400px
