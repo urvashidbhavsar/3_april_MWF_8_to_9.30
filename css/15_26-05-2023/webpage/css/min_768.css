@@ -1,0 +1,16 @@
+@media (min-width:768px) {
+    /* ======== common css ======= */
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+     /* ===== homepage ====== */
+    .HomePage .homepage-content h1 {
+        font-size: 45px;
+    }
+    .HomePage .waveWrapper{
+        height: 143px;
+        margin-top: -100px;
+    }
+}

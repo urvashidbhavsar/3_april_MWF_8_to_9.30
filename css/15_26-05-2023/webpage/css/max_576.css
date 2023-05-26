@@ -1,0 +1,36 @@
+@media (max-width:576px) {
+    /* ======== common css ======= */
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* ======= header ========= */
+    header .navbar .navigation{
+        flex: 3;
+        display: none;
+    }
+    header .navbar .end-nav button{
+        display: block;
+    }
+    header .navbar .logo .fa-gem{
+        font-size: 28px;
+    }
+    header .navbar .logo h1 {
+        font-size: 28px;
+    }
+    header .navbar .search{
+        display: none;
+    }
+    header .navbar .login{
+        display: none;
+    }
+    /* ===== homepage ====== */
+    .HomePage .homepage-content h1 {
+        font-size: 40px;
+    }
+    .HomePage .waveWrapper{
+        height: 97px;
+        margin-top: -50px;
+    }
+}
