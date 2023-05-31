@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* =========== common css =========== */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.padding-sec{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* ============= header =========== */
+header{
+    background-color: rgba(0, 0, 0, 0.527);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1111;
+}
+header .header_p{
+    padding: 20px 0px;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+}
+header .navbar .logo{
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .navbar .logo .fa-gem{
+    font-size: 38px;
+}
+header .navbar .logo p{
+    font-size: 16px;
+}
+header .navbar .navigation{
+    flex: 3;
+}
+header .navbar .navigation ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+header .navbar .navigation ul li{
+    padding: 10px;
+}
+header .navbar .navigation ul li a{
+    color: white;
+    font-weight: bold;
+    font-size: 17px ;
+}
+header .navbar .end-nav{
+    flex: 1;
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+header .navbar .end-nav a{
+    color: white;
+    font-size: 17px;
+}
+header .navbar .end-nav button{
+    display: none;
+    height: 33px;
+    width: 33px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+/* */
+/* ============= homepage ======== */
+.HomePage{
+    background: url(../images/banner3.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.HomePage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: linear-gradient(148.25deg, #A253D8 3%, #1545CB 89.85%); */
+    background: linear-gradient(to right, #a353d8b0,#1545cba7);
+    z-index: -1;
+}
+.HomePage .homepage-content{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.HomePage .homepage-p{
+    padding: 120px 0px;
+}
+.HomePage .homepage-content h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.HomePage .homepage-content p {
+    color: #fff;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 20px 0px;
+}
+.HomePage .homepage-content button{
+    height: 50px;
+    width: 200px;
+    background-color: #d87093;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    transition: 0.5s ease-in all;
+}
+.HomePage .homepage-content button:hover {
+    background-color: #ec2668;
+}
+.HomePage .waveWrapper{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+/* ========= learn_course ========== */
+.learn_course .learn_title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.learn_course .learn_title h6{
+    color: gray;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-bottom:10px ;
+}
+.learn_course .learn_title h1 {
+    color: #0d0d51;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding-bottom:10px ;
+}
+.learn_course .learn_details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.learn_course .learn_details .learn-img{
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+.learn_course .learn_details .learn-img .img-banner{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f22e48;
+    padding: 3px 10px;
+    border-radius: 40px;
+    color: white;
+}
+.learn_course .learn_details .learn-img .teaching{
+    height: auto;
+    max-width: 100%;
+    transition: 1s all ease-in-out;
+}
+.learn_course .learn_details .learn-grid:hover .teaching {
+    transform: scale(1.1);
+}
+.learn_course .learn_details .learn-text{
+    padding: 20px;
+}
+.learn_course .learn_details .learn-text .price-r{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.learn_course .learn_details .learn-text .price-r .price{
+    font-size: 22px;
+    color: #d87093;
+    font-weight: 600;
+}
+.learn_course .learn_details .learn-text .price-r .rattings {
+    color: #f22e48;
+}
+.learn_course .learn_details .learn-text h3 a{
+    color: black;
+    font-size:24px;
+    transition: 0.5s ease all;
+}
+.learn_course .learn_details .learn-text h3 a:hover {
+    color: #08315d;
+}
+.learn_course .learn_details .learn-text .timing{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+    color: gray;
+}
+.learn_course .learn_details .divide{
+    height: 1px;
+    width: 100%;
+    background-color: #c7c6c6;
+}
+.learn_course .learn_details .user-profile{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.learn_course .learn_details .user-profile img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.learn_course .learn_details .user-details span{
+    color: gray;
+}
+.learn_course .learn_details .user-details a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 1s all ease;
+}
+.learn_course .learn_details .user-details a:hover {
+    color: #08315d;
+}
+.learn_course .learn_details .learn-img .banner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:35px;
+    width: 80px;
+    display: grid;
+    place-content: center;
+    color: white;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
+    /* text-align: center; */
+}
+.learn_course .learn_details .learn-img .new {
+    background-color: #f22e48;
+}
+.learn_course .learn_details .learn-img .free {
+    background-color: blueviolet;
+}
+.learn_course .learn-bottom{
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+.learn_course .learn-bottom p{
+    color: gray;
+    font-size: 18px;
+}
+.learn_course .learn-bottom p a{
+    font-size: 20px;
+    color: #f22e48;
+}
+.learn_course .learn-bottom p a:hover{
+    color: #4c041c;
+}
+.learn_course .learn-bottom p span {
+    color: gray;
+    font-size: 15px;
+}
