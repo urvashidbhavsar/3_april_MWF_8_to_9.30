@@ -1,0 +1,48 @@
+@media (min-width:992px) {
+     /* ======== common css ======= */
+    .container {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+     header .navbar .navigation {
+            flex: 3;
+            display: flex;
+    }
+    header .navbar .end-nav button {
+        display: none;
+    }
+    header .navbar .search{
+        display: block;
+    }
+    header .navbar .login{
+        display: block;
+    }
+ /* ===== homepage ====== */
+    .HomePage .homepage-content h1 {
+        font-size: 55px;
+    }
+    .HomePage .waveWrapper{
+        height: 180px;
+        margin-top: -100px;
+    }
+
+    .learn_course .learn_details{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+      .learn_course .learn-bottom{
+        width: 50%;
+    }
+       /* === our facility  === */
+    .ourFacility .facilityDetails{
+        display: flex;
+        flex-direction: row;
+    }
+
+     /* news section */
+    .News-Sec .newsDetails{
+        display: flex;
+        flex-direction: row;
+    }
+}
