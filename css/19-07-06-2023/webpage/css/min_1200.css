@@ -1,0 +1,33 @@
+@media (min-width:1200px) {
+     /* ======== common css ======= */
+    .container {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+     header .navbar .logo .fa-gem {
+        font-size: 38px;
+    }
+    header .navbar .logo h1 {
+        font-size: 34px;
+    }
+    /* ==== homepage ===== */
+    .HomePage .homepage-content h1 {
+        font-size: 60px;
+    }
+    .HomePage .waveWrapper{
+        height: 238px;
+        margin-top: -100px;
+    }
+
+    /* our facility inherit from 992 px */
+
+    /* news section inherit from 992px */
+
+    /* professional section inherit from 992px */
+
+      /* testimonials */
+    .testimonials .client-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

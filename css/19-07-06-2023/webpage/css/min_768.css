@@ -1,0 +1,36 @@
+@media (min-width:768px) {
+    /* ======== common css ======= */
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+     /* ===== homepage ====== */
+    .HomePage .homepage-content h1 {
+        font-size: 45px;
+    }
+    .HomePage .waveWrapper{
+        height: 143px;
+        margin-top: -100px;
+    }
+
+    /* learn couse section inherit from min width 576px */
+
+    /* our facility inherit from min width 576px */
+
+    /* news section inherit from min width 576px */
+
+    /* professional section inherit from min width 576px */
+
+
+     /* testimonials */
+    .testimonials .client-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+     /* brands */
+    .brands .brands-grid{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+}
