@@ -1,0 +1,8 @@
+keyword means reserve word in programming.
+
+var 
+let  
+const 
+do 
+for 
+etc....
