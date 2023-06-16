@@ -1,0 +1,1 @@
+document.write("We create an external file");
