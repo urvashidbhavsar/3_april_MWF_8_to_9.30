@@ -1,0 +1,51 @@
+there is two type of conditional statement
+(1) if condition 
+(2) switch condition
+
+=> if condition syntax :
+    if(condition){
+        statements;
+    }
+
+=> if..else statement
+    if(condition){
+        statements;
+    }else{
+        statements
+    }
+
+=> if.. else if.. else statement
+    if(condition){
+        statements;
+    }else if(condition){
+        statement
+    }else{
+        statement
+    }
+
+=> nested if    
+    if(condition){
+        if(condition){
+            statements
+        }
+    }else{
+        if(condition){
+            statements
+        }
+    }
+
+
+=> switch statement
+
+    switch(variable_name){
+        case 1:
+            statement;
+            break;
+        case 2:
+            statement;
+            break;
+        ......
+        default:
+            statement;
+            break;
+    }
