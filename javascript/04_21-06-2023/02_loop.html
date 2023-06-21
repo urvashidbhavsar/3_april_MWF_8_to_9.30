@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- there is 6 type of loop 
+        loop is count number of iteration.
+
+        (1) while loop
+        (2) do..while loop 
+        (3) for loop
+        (4) for..in loop (object)
+        (5) for..of loop (array)
+        (6) foreach loop (array)
+    -->
+
+    <script>
+        // while loop
+        var a = 1;
+        while(a<=10){
+            document.writeln(a);
+            a++;
+        }
+
+        document.write("<br>")
+
+        a = 1;
+        do{
+            document.writeln(a)
+            a++
+        }while(a <= 10)
+
+        document.write("<br>")
+        for(var b=1; b <= 10; b++){
+            document.writeln(b)
+        }
+
+        // decrement
+        document.write("<br>")
+        for(var c=10;c >= 1; c--){
+            document.writeln(c)
+        }
+    </script>
+</body>
+</html>

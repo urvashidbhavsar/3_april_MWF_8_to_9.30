@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- print max number from given 3 numbers -->
+    <script>
+        let num1 = 110, num2 = 110, num3 = 100;
+        console.log("Number1 : "+num1);
+        console.log("Number2 : " + num2);
+        console.log("Number3 : " + num3);
+
+        if(num1 >= num2 && num1 >= num3){
+            console.log("two numbers are equal");
+             if (num1 > num2 && num1 > num3){
+                console.log(num1 + " is max");
+             }
+        }else if(num2 > num1 && num2 > num3){
+            // if(num2 > num3){
+                console.log(num2 + " is max");
+            // }
+        }else if(num3 > num1 && num3 > num2){
+            // if(num3 > num2){
+                console.log(num3 + " is max");
+            // }
+        }else{
+            console.log("all are same");
+        }
+    </script>
+</body>
+</html>
