@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function uservalue(){
+            let user = document.getElementById("userval").value;
+
+            document.getElementById("msg").innerHTML = user;
+            return false
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        <label for="userval">Enter Any Value : </label>
+        <input type="text" name="user_value" id="userval">
+        <button onclick="return uservalue()">Click Here</button>
+    </form>
+    <p>You Entered : <span id="msg"></span></p>
+
+    <!-- <script>
+        function uservalue() {
+            let user = document.getElementById("userval").value;
+
+            document.getElementById("msg").innerHTML = user;
+            return false
+        }
+    </script> -->
+</body>
+</html>

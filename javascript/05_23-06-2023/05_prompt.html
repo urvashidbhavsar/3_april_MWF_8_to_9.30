@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prompt_fun(){
+            let user = prompt("Enter Your name : ");
+            if(user == ""){
+                alert("Enter name")
+            }else{
+                // alert(user)
+                document.getElementById("p1").innerHTML = user;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- prompt can take input from user -->
+    <button onclick="prompt_fun()">Prompt</button>
+    <p id="p1"></p>
+</body>
+</html>

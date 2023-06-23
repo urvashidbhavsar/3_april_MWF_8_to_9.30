@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var open_link = "https://www.trustradius.com/html-editors"
+        var close_link;
+        function open_fun(){
+            close_link = window.open(open_link);
+        }
+        function close_fun(){
+            close_link.window.close();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="open_fun()">Open</button>
+    <button onclick="close_fun()">Close</button>
+</body>
+</html>
