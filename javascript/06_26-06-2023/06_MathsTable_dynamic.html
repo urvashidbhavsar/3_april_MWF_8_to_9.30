@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: auto;
+            width: 250px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        Enter Table number : 
+        <input type="text" name="" id="tableNum">
+        <button onclick="MathsTable()">Display</button>
+    </form>
+    <br>
+    <div class="div1" id="div1"></div>
+
+    <script>
+        function MathsTable(){
+            let table = document.getElementById("tableNum").value;
+            let div = document.getElementById("div1");
+            if(table == "" || table == null){
+                alert("Enter Number")
+            }else{
+                let i,res = "";
+                for(i = 1; i <= 10; i++){
+                    res = res + "<p>" + table + "&Cross;" + i + "=" + (table*i) + "</p>";
+                }
+                div.innerHTML = res;
+            }
+        }
+    </script>
+</body>
+</html>

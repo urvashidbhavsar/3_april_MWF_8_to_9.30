@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // create for multiple use
+        function simple_func(){
+            alert("Hello user")
+        }
+    </script>
+</head>
+<body>
+    <button id="btn1" onclick="simple_func()">With Normal Function</button>
+    <button id="btn2">With Add Event Listner</button>
+
+    <!-- write add event lister code bottom / end of the body -->
+    <script>
+        // use for atleast 1 time
+        let btn = document.getElementById("btn2")
+        btn.addEventListener("click",function(){
+            alert("add event listner")
+        })
+    </script>
+</body>
+</html>
