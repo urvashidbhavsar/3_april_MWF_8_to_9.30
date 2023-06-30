@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        .list{
+            background-color: indianred;
+        }
+        .list ul{
+            display: flex;
+            gap: 20px;
+        }
+        .list ul li{
+            padding: 10px;
+        }
+        .list ul li a{
+            color: white;
+        }
+        .list ul li span{
+            color: white;
+            font-size: 12px;
+        }
+        .list .innerDrop{
+            position: relative;
+        }
+        .list .innerDrop .dropdown{
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            top :38px;
+            left: -12px;
+            background-color: black;
+            width: 100px;
+            text-align: center;
+        }
+        .list .innerDrop .showMenu{
+            display: block;
+        }
+        .list .innerDrop .dropdown li{
+            padding: 5px;
+        }
+        .list .innerDrop .dropdown li a{
+            color: white;
+        }
+        .list .innerDrop .dropdown .cube{
+            height: 10px;
+            width: 10px;
+            background-color: black;
+            /* margin: auto; */
+            position: absolute;
+            top: -5px;
+            left: 43px;
+            /* transform: translateY(-10px) rotate(45deg); */
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="innerDrop">
+                <a href="#">Service</a>
+                <span class="fa-solid fa-angle-down"></span>
+                <ul class="dropdown">
+                    <div class="cube"></div>
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                    <li><a href="">Service 3</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+
+    <script>
+        let drop = document.querySelector(".innerDrop")
+        let showdrop = document.querySelector(".dropdown")
+        drop.addEventListener("click",function(){
+            showdrop.classList.toggle("showMenu")
+        })
+    </script>
+</body>
+</html>
