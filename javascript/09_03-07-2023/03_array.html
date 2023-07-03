@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in variable it take at a time only one value
+        but array take a multiple value at a time
+    -->
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        let myArr = ["HTML","CSS","Js","Jquery","Bootstrap","Advanced js", "React js"]
+        document.getElementById("p1").innerHTML = myArr
+        
+        document.write(myArr[0])
+        document.write(myArr[1])
+        document.write(myArr[2])
+        document.write(myArr[3])
+        document.write(myArr[4])
+        document.write("<br> ========================== ")
+
+        // use loop to print array
+        let arr;
+        for (arr of myArr) {
+            document.write("<br>" + arr)
+        }
+
+    </script>
+</body>
+</html>

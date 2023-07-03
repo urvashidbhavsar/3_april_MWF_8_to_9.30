@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- object = logical or physical items -->
+    <script>
+        let person = {
+            firstname : "Rohit",
+            lastname : "Patel",
+            MobileNo : 9856326589,
+            Birthdate : "30-12-2000",
+        }
+        console.log(person);
+
+        document.write(person.firstname + "<br>")
+        document.write(person.lastname + "<br>")
+        document.write(person.MobileNo + "<br>")
+        document.write(person.Birthdate + "<br>")
+
+        // to print object use for .. in loop
+        for (const per in person) {
+            console.log( per + "=>" + person[per]);
+        }
+
+    </script>
+</body>
+</html>

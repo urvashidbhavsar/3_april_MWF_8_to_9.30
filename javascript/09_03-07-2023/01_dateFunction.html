@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="printdate"></h3>
+    <h3 id="fulldate"></h3>
+    <h3 id="systime"></h3>
+    <script>
+        let dt = new Date();
+
+        document.getElementById("printdate").innerHTML = dt;
+        // month = 0-11
+        document.getElementById("fulldate").innerHTML = dt.getDate() + "-" + (dt.getMonth() + 1) + "-" + dt.getFullYear()
+
+        document.getElementById("systime").innerHTML = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds()
+    </script>
+</body>
+</html>
