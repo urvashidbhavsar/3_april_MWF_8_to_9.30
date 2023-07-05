@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="">Enter Email : </label>
+        <input type="text" name="" id="mail" onblur="return checkEmail()" onkeyup="return emailExcheck()">
+        <button type="submit" onclick="return checkEmail()">Click Here</button>
+    
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function checkEmail(){
+            let email = document.getElementById("mail").value;
+            if(email == "" || email == null){
+                document.getElementById("msg").innerText = "Enter Email"
+                return false;
+            }else{
+                 document.getElementById("msg").innerText = ""
+                return false;
+            }
+        }
+        function emailExcheck(){
+            // take a reg expression from w3resource.com
+            let email = document.getElementById("mail").value;
+            let regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/
+            if(regEx.test(email)){
+                document.getElementById("msg").innerText = ""
+                return false
+            }else{
+                document.getElementById("msg").innerText = "Enter Proper Email"
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

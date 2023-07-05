@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="">Enter Mobile no : </label>
+        <input type="text" name="" id="mobile" onblur="return checkMobile()" onkeyup="return checkRegEx()" maxlength="10">
+        <button onclick="return checkMobile()">Click Here</button>
+
+        <p id="msg"></p>
+    </form>
+    <script>
+        // click and blur (when use press tab)
+        function checkMobile(){
+            let mno = document.getElementById("mobile").value;
+            if(mno == "" || mno == null){
+                document.getElementById("msg").innerText = "Enter Mobile No";
+                return false
+            }else{
+                document.getElementById("msg").innerText = "";
+                return false
+            }
+        }
+        // keyboard event
+        function checkRegEx(){
+            let mno = document.getElementById("mobile").value;
+            let regEx = /^[0-9]*$/;
+            let start = /^[6-9]/
+            if((!(start.test(mno))) || (!(regEx.test(mno)))){
+                document.getElementById("msg").innerText = "Enter Proper Number"
+                return false
+            }else if(mno.length < 10){
+                 document.getElementById("msg").innerText = "Enter 10 Digits"
+                return false
+            }else{
+                document.getElementById("msg").innerText = ""
+                return false
+            }
+        }
+    </script>
+</body>
+</html>
