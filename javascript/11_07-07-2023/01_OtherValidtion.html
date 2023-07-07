@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="">Gender : </label>
+        <input type="radio" name="gen" id="male" onblur="return checkGender()">
+        <label for="">Male</label>
+        <input type="radio" name="gen" id="female" onblur="return checkGender()">
+        <label for="">Female</label>
+        <input type="radio" name="gen" id="other" onblur="return checkGender()">
+        <label for="">Other</label>
+
+        <span id="msg"></span>
+        <br><br>
+
+        <label for="">Subject : </label>
+        <input type="checkbox" name="" id="c1">
+        <label for="">HTML</label>
+        <input type="checkbox" name="" id="c2">
+        <label for="">CSS</label>
+        <input type="checkbox" name="" id="c3">
+        <label for="">JS</label>
+        <span id="msg1"></span>
+
+        <br><br>
+        <label for="">City : </label>
+        <select name="" id="city">
+            <option value="-1">---select---</option>
+            <option value="">Surat</option>
+            <option value="">Navsari</option>
+        </select>
+        <span id="msg2"></span>
+
+        <br><br>
+        <button onclick="return checkGender()">Click Here</button>
+    </form>
+    <script>
+        function checkGender(){
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+            let others = document.getElementById("other").checked;
+
+            let c1 = document.getElementById("c1").checked;
+            let c2 = document.getElementById("c2").checked;
+            let c3 = document.getElementById("c3").checked;
+
+            let city = document.getElementById("city").value;
+
+            if(male == false && female == false && others == false){
+                document.getElementById("msg").innerText = "Select Gender";
+                return false
+            }else if (c1 == false && c2 == false && c3 == false) {
+                document.getElementById("msg1").innerText = "Select Subject"
+                return false
+            }else if(city == "-1"){
+                document.getElementById("msg2").innerText = "Select City"
+                return false
+            }
+            else{
+                document.getElementById("msg").innerText = ""
+                document.getElementById("msg1").innerText = ""
+                document.getElementById("msg2").innerText = ""
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

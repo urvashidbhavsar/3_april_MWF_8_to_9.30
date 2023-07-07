@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .regform{
+            border: 2px solid black;
+            padding: 20px;
+            width: 730px;
+            margin: auto;
+        }
+        h3{
+            padding-bottom: 20px;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding: 10px;
+        }
+        input[type="text"]{
+            height: 20px;
+            width: 300px;
+            padding: 0px 5px;
+        }
+        .msg{
+            color: red;
+        }
+        button{
+            height: 30px;
+            width: 100px;
+            background-color: green;
+            color: white;
+            border: 2px solid green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="regform">
+        <h3>New User</h3>
+        <form action="#">
+            <!-- firstname -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Firstname</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="fname" onblur="return blankCheck(this,'msg1')" onkeyup="return regExName(this, 'msg1')">
+                </div>
+                <div class="col">
+                    <span class="msg" id="msg1"></span>
+                </div>
+            </div>
+            <!-- lastname -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Lastname</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="lname" onblur="return blankCheck(this,'msg2')"
+                    onkeyup="return regExName(this, 'msg2')">
+                </div>
+                <div class="col">
+                    <span class="msg" id="msg2"></span>
+                </div>
+            </div>
+
+            <!-- button -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button type="submit" onclick="return clickForm()">Register</button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
