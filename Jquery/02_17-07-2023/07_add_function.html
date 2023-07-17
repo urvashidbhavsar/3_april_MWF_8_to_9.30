@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            // append = add after
+            // prepand = add before
+            $("#btn1").click(function(){
+                $("ul").append("<li>New List</li>")
+            })
+              $("#btn2").click(function () {
+                $("ul").prepend("<li>New List</li>")
+            })
+             $("#btn3").click(function () {
+                $(".span1").before("!!!")
+            })
+            $("#btn4").click(function () {
+                $(".span1").after("!!!")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- add functions  : append(), prepand(), before() and after() -->
+
+    <button id="btn1">Append()</button>
+    <button id="btn2">Prepand()</button>
+    <button id="btn3">Before()</button>
+    <button id="btn4">After()</button>
+
+    <hr>
+    <ul>
+        <li>List 1</li>
+    </ul>
+    <!-- before and after used with inline elements -->
+    <span class="span1">New Values</span>
+</body>
+</html>

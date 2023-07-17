@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert($("#p1").text())
+            })
+            $("#btn2").click(function () {
+                alert($("#p1").html())
+            })
+             $("#btn3").click(function () {
+                alert($("input").val())
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- there is 3 function to get or set attribute 
+        text() html() and val()
+    -->
+
+    <button id="btn1">text()</button>
+    <button id="btn2">html()</button>
+    <button id="btn3">value()</button>
+
+    <hr>
+    <p id="p1">
+        <i><b>this is javascript library</b></i>
+    </p>
+
+    <input type="text" value="Hello user">
+</body>
+</html>

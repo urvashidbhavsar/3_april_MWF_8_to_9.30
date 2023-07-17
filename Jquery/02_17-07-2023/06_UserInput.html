@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        #msg{
+            color: red;
+        }
+    </style>
+    <script>
+        // user input
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $user = $("#userinput").val()
+                if($user == "" || $user == null){
+                    $("#msg").text("Enter value");
+                    return false
+                }else{
+                    $(".msg").text($user)
+                    return false
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <form action="">
+        Enter Any Value : 
+        <input type="text" name="" id="userinput">
+        <button id="btn1">Click Here</button>
+    </form>
+    <p id="msg" class="msg"></p>
+</body>
+</html>

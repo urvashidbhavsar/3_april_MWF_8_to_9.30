@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .heading1{
+            color: rgb(187, 202, 232);
+            background-color: darkslateblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+        }
+        .heading2{
+            color: chocolate;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".head1").addClass("heading1")
+            })
+             $("#btn2").click(function () {
+                $(".head1").removeClass("heading1")
+            })
+             $("#btn3").click(function () {
+                $(".head2").toggleClass("heading2")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- addClass(), removeClass() toggleClass() -->
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+    <button id="btn3">Toggle Class</button>
+
+    <hr>
+    <h1 class="head1">Hello User</h1>
+    <h1 class="head2">Hello User</h1>
+
+</body>
+</html>
