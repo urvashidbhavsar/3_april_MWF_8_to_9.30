@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <style>
+        * {
+            margin: 0;
+        }
+        .bx-wrapper {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: none;
+            background: #fff;
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 25px
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background: white;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background: red;
+        }
+        .banners1{
+            background: url(images/wallpaper1.avif) center no-repeat;
+            background-size: cover;
+            height: 550px;
+            color: white;
+        }
+         .banners2{
+            background: url(images/wallpaper2.jpg) center no-repeat;
+            background-size: cover;
+            color: white;
+            height: 550px;
+        }
+         .banners3{
+            background: url(images/wallpaper3.avif) center no-repeat;
+            background-size: cover;
+            color: white;
+            height: 550px;
+        }
+         .banners4{
+            background: url(images/wallpaper4.jpg) center no-repeat;
+            background-size: cover;
+            color: white;
+            height: 550px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bxslider">
+        <div class="banners1">
+            <h1>Image 1</h1>
+        </div>
+        <div class="banners2">
+            <h1>Image 2</h1>
+        </div>
+        <div class="banners3">
+            <h1>Image 3</h1>
+        </div>
+        <div class="banners4">
+            <h1>Image 4</h1>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                mode: "fade",
+                speed: 1000,
+                randomStart: true,
+                infiniteLoop: true,
+                captions: true,
+                pager: true,
+                pagerType: "full",
+                controls: true,
+                auto: true,
+                autoHover: true,
+            })
+        })
+    </script>
+</body>
+
+</html>

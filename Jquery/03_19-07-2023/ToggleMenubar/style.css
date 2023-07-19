@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0px 80px;
+}
+header{
+    background-color: transparent;
+    position: fixed;
+    top:0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease all;
+}
+/* ====== create  random class for header bg color which is not include in any structure ==========*/
+.header-fixed {
+    background-color: teal;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease all;
+}
+header .header-p{
+    padding: 20px 0px;
+}
+header .header-flex{
+    display: flex;
+    align-items: baseline;
+}
+header .header-flex .logo{
+    flex: 1;
+}
+header .header-flex .logo h1{
+    color: white;
+}
+header .header-flex .navbar{
+    flex: 4;
+}
+header .header-flex .navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+header .header-flex .navbar ul li{
+    padding: 10px;
+}
+header .header-flex .navbar ul li a{
+    color: white;
+}
+header .header-flex .theme{
+    flex:0.5;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+}
+header .header-flex .theme .togglebtn{
+    display: none;
+    position: relative;
+}
+
+header .header-flex .theme button {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* =========== create random class which is not include any structure ============ 
+    for replacing navbar
+*/
+header .header-flex .nav-toggle {
+    background-color: #47b60b;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+header .header-flex .nav-toggle ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+header .header-flex .nav-toggle ul li {
+    padding: 5px;
+}
+
+header .header-flex .nav-toggle ul li a {
+    color: black;
+}
+/* =============== */
+.bgimage img{
+    height: 600px;
+    width: 100%;
+}
+
+
+/* ======== media query ========= */
+@media (max-width:576px) {
+    .container{
+        margin: 0px 20px;
+    }
+    header .header-flex .theme .togglebtn {
+        display: block;
+    }
+    header .header-flex .navbar{
+        display: none;
+    }
+    header .header-flex .nav-toggle {
+        display: block;
+    }
+}
+@media (min-width:576px) {
+    .container {
+        margin: 0px 35px;
+    }
+
+    header .header-flex .theme .togglebtn {
+        display: block;
+    }
+
+    header .header-flex .navbar {
+        display: none;
+    }
+
+    header .header-flex .nav-toggle {
+        display: block;
+    }
+}
+@media (min-width:768px) {
+    /* inherit */
+}
+@media (min-width:992px) {
+    .container {
+        margin: 0px 50px;
+    }
+
+    header .header-flex .theme .togglebtn {
+        display: none;
+    }
+
+    header .header-flex .navbar {
+        display: block;
+    }
+
+    header .header-flex .nav-toggle {
+        display: none;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        margin: 0px 80px;
+    }
+}
