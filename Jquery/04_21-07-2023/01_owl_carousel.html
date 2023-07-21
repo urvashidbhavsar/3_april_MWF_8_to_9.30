@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- owl carousel css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        img{
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="images/image1.avif" alt="">
+        </div>
+        <div class="item">
+            <img src="images/image2.avif" alt="">
+        </div>
+        <div class="item">
+            <img src="images/image3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/image4.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/image5.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/image6.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="images/image7.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/image8.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- owl carousel js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots:false,
+                autoplay:true,
+                autoplayTimeout : 2000,
+                autoplayHoverPause:true,
+                // items:1,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768:{
+                        items :3
+                    },
+                    1000: {
+                        items: 4
+                    },
+                    1200:{
+                        items:5
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>
