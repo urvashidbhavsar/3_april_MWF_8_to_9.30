@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .para{
+            color: blue;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $("p").filter("#p3").addClass("para")
+                // $("p").first().addClass("para")
+                // $("p").last().addClass("para")
+                // $("p").eq(3).addClass("para") => apply index number 
+                $("p").not("#p3").addClass("para")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- filter function : first() last() eq() not() and filter() -->
+    <button id="btn1">Click Here</button>
+    <hr>
+    <p id="p1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quod vitae numquam aliquam reprehenderit saepe ut autem quibusdam recusandae dolorum sapiente, molestiae hic, earum ipsa facere cupiditate asperiores eligendi deserunt!
+    </p>
+    <p id="p2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quod vitae numquam aliquam reprehenderit saepe ut
+        autem quibusdam recusandae dolorum sapiente, molestiae hic, earum ipsa facere cupiditate asperiores eligendi
+        deserunt!
+    </p>
+    <p id="p3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quod vitae numquam aliquam reprehenderit saepe ut
+        autem quibusdam recusandae dolorum sapiente, molestiae hic, earum ipsa facere cupiditate asperiores eligendi
+        deserunt!
+    </p>
+    <p id="p4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quod vitae numquam aliquam reprehenderit saepe ut
+        autem quibusdam recusandae dolorum sapiente, molestiae hic, earum ipsa facere cupiditate asperiores eligendi
+        deserunt!
+    </p>
+</body>
+</html>
