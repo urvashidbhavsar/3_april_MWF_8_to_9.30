@@ -1,0 +1,18 @@
+display flex : d-flex 
+align-items  : align-items-center 
+
+(1) input type : text, date, password, number, email
+class : form-control 
+
+(2) label : 
+class : form-label
+
+(3) for radio button & checkbox : 
+class : form-check-input 
+
+(4) for radio button & checkbox label:
+class : form-check-label  
+
+(5) for radio button & checkbox parent div :
+class : form-check  
+if set inline class : form-check-inline 

@@ -1,0 +1,16 @@
+        css                             bootstrap (class)
+    max-width:576px                        - 
+    min-width:576px                        sm (small)
+    min-width:768px                        md (medium)
+    min-width:992px                        lg (large)
+    min-width:1200px                       xl (extra large)
+    min-width:1400px                     xxl (extra extra large)
+
+
+responsive flex box  (grid system)
+row class and col class  
+row class is a flexible class to make responsive website.
+
+there is two class for set website content 
+(1) container 
+(2) container-fluid 
