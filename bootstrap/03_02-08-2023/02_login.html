@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background: conic-gradient(cadetblue,#0d4345,#103ea2,cadetblue);
+        }
+        .loginpage{
+            width: 40%;
+            padding: 20px;
+            margin: 200px auto;
+            background-color: white;
+            box-shadow: 0px 0px 10px 0px black;
+        }
+        input[type="text"],[type="password"]{
+            border-radius: 0;
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+            border-bottom: 1px solid black !important;
+        }
+        input[type="text"]:focus,[type="password"]:focus{
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginpage">
+        <h3>Login</h3>
+        <form action="">
+           <div class="row py-1">
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="email" placeholder="Email Address">
+                    <label for="email">Email address</label>
+                </div>
+            </div>
+           </div>
+            <div class="row py-1">
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="pass" placeholder="Password">
+                        <label for="pass">Password</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

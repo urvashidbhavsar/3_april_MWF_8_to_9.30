@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Yesteryear&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Rancho", cursive;
+}
+header{
+    background-color: #a51c21;
+}
+.navigation a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contacthotel a{
+    text-transform: lowercase;
+    color:white;
+    letter-spacing: normal;
+}
+.contacthotel span {
+    color: white;
+}
+.navigation .dropdown-menu a {
+    color:black;
+}
+.homepage{
+    background: url(images/b1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+.homepage .logo{
+    height: 100px;
+    width: 100px;
+}
+.homepage .logo-t{
+    font-family: "Yesteryear",cursive;
+}
+.homepage .hometext h1{
+    font-size: 80px;
+}
+.homepage .hometext span{
+    font-size: 30px;
+    color: white;
+}
+.homepage .hometext .f-icon::before{
+    content: "";
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    margin: 7px 5px;
+}
+.homepage .hometext .f-icon::after {
+    content: "";
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    margin: 7px 5px;
+}
+.welcome .welcome-text{
+    background-color: #0f0f0f;
+}
+.welcome .wel-txt{
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.welcome .btnDark{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 0;
+}
+.welcome .btnDark:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+@media (max-width:576px) {
+    .homepage .hometext h1 {
+        font-size: 40px;
+    }
+}

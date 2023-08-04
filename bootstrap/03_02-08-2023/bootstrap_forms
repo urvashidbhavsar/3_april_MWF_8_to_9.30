@@ -1,0 +1,33 @@
+display flex : d-flex 
+align-items  : align-items-center 
+
+(1) input type : text, date, password, number, email
+    textarea
+class : form-control 
+
+(2) label : 
+class : form-label
+
+(3) for radio button & checkbox : 
+class : form-check-input 
+
+(4) for radio button & checkbox label:
+class : form-check-label  
+
+(5) for radio button & checkbox parent div :
+class : form-check  
+if set inline class : form-check-inline 
+
+(6) for range :
+    class form-range 
+
+(7) for dropdown : class : form-select
+
+(8) to join button or label end of input use 
+    parent : input-group 
+    child : input-group-text
+
+(9) floating labels :
+    parent  : form-floating
+    if we want floating labels in input use placeholder complusory.
+    if we remove or not set the label are show as static.
