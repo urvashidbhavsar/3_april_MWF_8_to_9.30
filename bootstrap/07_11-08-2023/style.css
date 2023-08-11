@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Yesteryear&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Rancho", cursive;
+}
+header{
+    background-color: #a51c21;
+}
+.navigation a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contacthotel a{
+    text-transform: lowercase;
+    color:white;
+    letter-spacing: normal;
+}
+.contacthotel span {
+    color: white;
+}
+.navigation .dropdown-menu a {
+    color:black;
+}
+.homepage{
+    background: url(images/b1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+.homepage .logo{
+    height: 100px;
+    width: 100px;
+}
+.homepage .logo-t{
+    font-family: "Yesteryear",cursive;
+}
+.homepage .hometext h1{
+    font-size: 80px;
+}
+.homepage .hometext span{
+    font-size: 30px;
+    color: white;
+}
+.homepage .hometext .f-icon::before{
+    content: "";
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    margin: 7px 5px;
+}
+.homepage .hometext .f-icon::after {
+    content: "";
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    margin: 7px 5px;
+}
+.welcome .welcome-text{
+    background-color: #0f0f0f;
+}
+.welcome .wel-txt{
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.welcome .btnDark{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 0;
+}
+.welcome .btnDark:hover {
+    background-color: white;
+    color: black;
+}
+.menus .storyimg1{
+    background: url(images/g1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+.menus .storyimg2 {
+    background: url(images/about2.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+.menus .storyimg3 {
+    background: url(images/modal.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+.menus .storyMenu{
+    background-color: #FAA026;
+}
+.menus .storyMenu .cube1{
+    height: 25px;
+    width: 25px;
+    background-color: #FAA026;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(60px) rotate(45deg);
+}
+.menus .storyMenu1{
+    background-color: #00bb83;
+}
+.menus .storyMenu1 .cube2 {
+    height: 25px;
+    width: 25px;
+    background-color: #00bb83;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-60px) rotate(45deg);
+}
+.menuList img{
+    outline: 1px solid gray;
+    border-radius: 4px;
+    outline-offset: 4px;
+}
+.menuList img:hover{
+    outline: 1px solid #a51c21;
+}
+.OurMenu{
+    background: url(images/mbg.png) no-repeat center fixed;
+    background-size: cover;
+}
+.OurMenu .OurMenuSec{
+    background-color: rgba(255, 255, 255, 0.535);
+}
+.specialSec{
+    background: url(images/menu-bg.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.specialSec .SpecialMenu{
+    background-color: white;
+    padding: 20px;
+}
+.SpecialMenu .spMenu{
+    box-shadow: 2px 3px 5px gray;
+    padding: 20px;
+}
+.SpecialMenu .spMenu img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    outline: 4px solid #a51c21;
+    outline-offset: 4px;
+}
+.specialSec .amount{
+    color: #00bb83;
+}
+.menuname{
+    background-color: black;
+}
+.menuname ul{
+    display: flex;
+    justify-content: center;
+}
+.list-group-item {
+    color: white ;
+    background-color: black;
+    border: none;
+}
+.list-group-item.active {
+    color: black;
+    background-color: white;
+}
+.menuData{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.menuData .amt{
+    font-size: 24px;
+    color: #044e38;
+    font-weight: bold;
+}
+.menuListBr{
+    border: 1px dotted red ;
+}
+.btnLoad{
+    background-color: #a51c21;
+    color: white;
+    border:1px solid transparent;
+    border-radius: 0;
+}
+.btnLoad:hover {
+    background-color: transparent;
+    color: #a51c21;
+    border: 1px solid #a51c21;
+}
+.timing{
+    background: url(images/sub.jpg) center no-repeat;
+    background-size: 50%;
+}
+.timingSec .timing .heading{
+    font-size: 25px;
+}
+.timingSec .timing .heading::before{
+    content: "";
+    height: 3px;
+    width: 180px;
+    background-color: white;
+    display: inline-block;
+    margin: 2px  5px;
+}
+.timingSec .timing .heading::after {
+    content: "";
+    height: 3px;
+    width: 180px;
+    background-color: white;
+    display: inline-block;
+    margin: 2px 5px;
+}
+.showtime{
+    width: 410px;
+    margin: auto;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    color: white;
+}
+#login input[type="text"],
+[type="password"] {
+    border-radius: 0;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid black !important;
+}
+
+#login input[type="text"]:focus,
+[type="password"]:focus {
+    box-shadow: none;
+}
+footer{
+    background-color: #a51c21;
+    color: white;
+}
+footer a{
+    color: white;
+    letter-spacing: 0px;
+    transition: 0.5s ease all;
+}
+footer a:hover {
+    letter-spacing: 1px;
+}
+footer .icon{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+}
+footer .socIcon{
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+}
+@media (max-width:576px) {
+    .homepage .hometext h1 {
+        font-size: 40px;
+    }
+    .menus .storyimg3 {
+        height: 300px;
+        width: 102%;
+    }
+}
+@media (min-width:576px) {
+    .menus .storyimg3 {
+        height: 300px;
+        width: 102%;
+    }
+}
+@media (min-width:992px) {
+     .menus .storyimg3 {
+        height: 100%;
+        width: unset;
+    }
+}
