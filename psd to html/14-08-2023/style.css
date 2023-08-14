@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    background-color: #daac00;
+}
+header .nav-link{
+    color: white;
+}
+header input[type="text"]{
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid white !important;
+    color: white;
+}
+header input[type="text"]:focus {
+    background: transparent;
+    box-shadow: none;
+}
+header input[type="text"]::placeholder {
+    color: white;
+}
+header .btn{
+    border-radius: 0 !important;
+}
+header ul{
+    justify-content: center !important;
+    width: 100%;
+    gap: 30px;
+}
+.homepage{
+    background-color: #fcc302;
+}
+.service .btnYellow{
+    background-color: #fcc302;
+    color: white;
+    border: 1px solid transparent;
+}
+.service .btnYellow:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #fcc302;
+}
+.service .dimg {
+    background: url(images/dog23.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    width: 400px;
+    height: 350px;
+    z-index: 1;
+    display: grid;
+    place-content: center;
+}
+.service .dimg::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(218, 172, 0, 0.569);
+    z-index: -1;
+}
+.service .icon{
+    height: 70px;
+    width:70px;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+.service .backdiv{
+    height: 120px;
+    width: 120px;
+    background-color: #fcc302;
+}
+.service .dmainimg{
+    position: relative;
+}
+.service .backdiv{
+    position: absolute;
+        bottom: -16px;
+        left: 62px;
+}
